@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.listItem{
+  margin-right: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login{
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center; 
+ background-color: #87B7FF;
+}
+
+.wrapper{
+  width: 65%;
+  height: 75%;
+  /* box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69);
+  -webkit-box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69);
+  -moz-box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69); */
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.left,.right{
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.center{
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+}
+
+.or{
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  z-index: 1;
+}
+
+.line{
+  width: 0.5px;
+  height: 65%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.loginButton{
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
   color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Zilla Slab', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.google{
+  background-color: #87B7FF;
+}
+.facebook{
+  background-color: #507cc0;
+}
+.instagram{
+  background-color: rgb(228, 64, 95);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+input{
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.submit{
+  width: 200px;
+  background-color: #87B7FF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.loginTitle{
+  position: absolute;
+  top: 150px;
+  color: black;
+  font-family: 'Zilla Slab', serif;
+}
+
+.notSignIn{
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.link{
+  color: #507cc0;
+  cursor: pointer;
+}
+
+.linker{
+  color: inherit;
+  text-decoration: none;
+}
+
+.signUp{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #87B7FF;
+ }
+
+.wrapperSign{
+  width: 35%;
+  height: 75%;
+  /* box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69);
+  -webkit-box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69);
+  -moz-box-shadow: 0px -1px 5px 4px rgba(0,0,0,0.69); */
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.signUpBtn{
+  width: 200px;
+  background-color: #87B7FF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.form{
+  justify-content: center;
+  text-align: center;
 }
